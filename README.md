@@ -10,3 +10,4 @@ R scripts for the analysis of Single-cell RNA sequencing data of breast cancer-a
 
 Files with data required for the analysis: SS2_15_0048.tar.gz, SS2_15_0049.tar.gz, qc.tar.gz, 170210_naba_matrisome.txt
 
+The working directory in R should contain all data files.
