@@ -50,6 +50,8 @@ DESeq_result<-results(ddsFullCountTable)
 DESeq_result<-DESeq_result[order(DESeq_result$padj, DESeq_result$pvalue),]
 head(DESeq_result,30)
 write.table(DESeq_result[grep("ERCC", rownames(DESeq_result), invert=TRUE),], "DESeq_result.txt", col.names = TRUE, row.names = TRUE, quote = FALSE, sep="\t")
+
+                                             
 ####### EdgeR ############
 library("edgeR")
 edgeR_Data<-DGEList(counts=all.counts.raw[rownames(RPKM.full),], group=ann$Population)
